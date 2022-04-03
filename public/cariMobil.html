@@ -64,7 +64,6 @@
                       <div class="col-md-6" id="texthome">
                           <h1 class="justify-content-center"><b>Sewa & Rental Mobil Terbaik di kawasan Surabaya</b></h1>
                           <p class="justify-content-center">Selamat datang di Binar Car Rental.<br>Kami Menyediakan mobil kualitas terbaik dengan harga terjangkau.<br>Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-                          <button type="button" class="btn btn-success">Mulai Sewa Mobil</button>
                       </div>
                       <div class="col-md-6 mt-lg-5">
                           <img src="Image/Car.svg" id="ImgCar" class="img-fluid">
@@ -73,242 +72,44 @@
               </div>
     </div>
 
-    <!-- Our Service-->
-    <div id="section2">
-    <div class="container my-md-5 pb-3">
-        <div class="row align-items-center g-1">
-          <div class="col-md-6 my-5 pt-5">
-              <img src="Image/Service.png" id="imgService">
-          </div>
-          <div class="col-md-6 mt-md-5">
-            <div id="textService" class="my-md-5 mr-1">
-              <h2><b>Best Car Rental for any kind of trip in Surabaya!</b></h2>
-                  <p>Sewa mobil di Surabaya bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
-                  <div style="line-height:200%;">
-                    <span class="centang"><img src="Image/Logocentang.svg"> Sewa Mobil Dengan Supir di Bali 12 Jam <br> </span>
-                    <span class="centang"><img src="Image/Logocentang.svg"> Sewa Mobil Lepas Kunci di Bali 24 Jam <br> </span>
-                    <span class="centang"><img src="Image/Logocentang.svg"> Sewa Mobil Jangka Panjang Bulanan <br> </span>
-                    <span class="centang"><img src="Image/Logocentang.svg"> Gratis Antar - Jemput Mobil di Bandara <br> </span>
-                    <span class="centang"><img src="Image/Logocentang.svg"> Layanan Airport Transfer / Drop In Out <br> </span>
-                </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    </div>
+    <!--Cari Mobil-->
+    <div class="container position-relative cariMobil">
+      <div class="formCariMobil">
+        <form>
+          <div class="row">
 
-    <!--Why Us?-->
-    <div id="section3">
-    <div class="container my-5 pt-5 pb-2">
-      <div class="row">
-          <div class="textWhyUs mb-lg-5 mt-1 ml-2">
-          <h2><b>Why Us?</b></h2>
-          <p>Mengapa harus pilih Binar Car Rental?</p>
-          </div>
-      </div>
-      <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3 mb-5 mt-1">
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body">
-                <a class="logoWhyUs"><img src="image/icon_completetumbsup.svg"></a>
-                <h5 class="card-title"><b>Mobil Lengkap</b></h5>
-                <p class="card-text">Tersedia berbagai pilihan mobil dengan kondisi masih baru, bersih dan terawat</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body">
-                <a class="logoWhyUs"><img src="image/icon_price.svg"></a>
-                <h5 class="card-title"><b>Harga Murah</b></h5>
-                <p class="card-text">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body">
-                <a class="logoWhyUs"><img src="image/icon_24hrs.svg"></a>
-                <h5 class="card-title"><b>Layanan 24 Jam</b></h5>
-                <p class="card-text">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="card-body">
-                <a class="logoWhyUs"><img src="image/icon_professional.svg"></a>
-                <h5 class="card-title"><b>Sopir Profesional</b></h5>
-                <p class="card-text">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-    </div>
-
-    <!--Testimoni-->
-    <div id="section4">
-      <div class="container my-5 pt-2">
-          <div class="row my-md-5 mb-sm-2">
-              <div class="textTestimoni pd-2" style="text-align: center;">
-                <h2><b>Testimonial</b></h2>
-                <p>Berbagai review positif dari para pelanggan kami</p>
-                </div>
+            <div class="col-lg">
+              <label for="inputDriver" class="form-label">Tipe Driver</label>
+              <select class="form-select" placeholder="Pilih Tipe Driver" id="inputDriver" required>
+                <option selected>Pilih Tipe Driver</option>
+                <option>Dengan Sopir</option>
+                <option>Tanpa Sopir (Lepas Kunci)</option>
+              </select>
             </div>
 
-            <div class="row">
-              <div class="col-md-12 mb-5">
-                <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
-                  
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="row text-center" style="justify-content: center;">
-                        <div class="col-lg-9">
-                          <div class="single-box mt-2">
-                            <div class="row" id="carousel-body">
-                              <div class="col-md-3 mt-md-4">
-                                <img src="Image/dee.svg" alt="" class="testijohn">
-                              </div>
-                              <div class="col-md-9 text-start pb-md-3">
-                                <div class="rating">
-                                  <img src="Image/Ratestars.svg" alt="rating-stars" class="ratestars">
-                                </div>
-                                <div class="testitext my-md-3">
-                                  <p style="padding-right: 10%;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                                  <p><b>Dee 32, Bromo</b></p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="row text-center" style="justify-content: center;">
-                        <div class="col-lg-9">
-                          <div class="single-box mt-2">
-                            <div class="row" id="carousel-body">
-                              <div class="col-md-3 mt-md-4">
-                                <img src="Image/john.svg" alt="" class="testijohn">
-                              </div>
-                              <div class="col-md-9 text-start pb-md-3">
-                                <div class="rating">
-                                  <img src="Image/Ratestars.svg" alt="rating-stars" class="ratestars">
-                                </div>
-                                <div class="testitext my-md-3">
-                                  <p style="padding-right: 10%;">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
-                                  <p><b>John 31, Bromo</b></p>
-                                </div>
-                              </div>
-        
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row justify-content-center">
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="" style="margin-left: 10%;" aria-hidden="true"><img src="Image/Left button.svg" alt="" onmouseover="this.src='Image/Left button.svg'" onmouseout="this.src='Image/Left button.svg'"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="" style="margin-right: 10%;" aria-hidden="true"><img src="Image/Right button.svg" alt="" onmouseover="this.src='Image/Right button.svg'" onmouseout="this.src='Image/Right button.svg'"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <div class="col-lg">
+              <label for="inputDate" class="form-label">Tanggal</label>
+              <input type="date" class="form-control" placeholder="Pilih Tanggal" id="inputDate" required/>
             </div>
-      </div>
-    </div>
 
-    <!--Sewa Sekarang-->
-    <div id="section5">
-      <div class="my-5 container">
-        <div class="row py-lg-5">
-          <div class="col-12">
-          <div class="konten5 text-center">
-            <h2 class="textkonten5 mb-3"><b>Sewa Mobil di Surabaya Sekarang!</b></h2>
-            <p class="textkonten5 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet. </p>
-            <button type="button" class="btn btn-success">Mulai Sewa Mobil</button>
+            <div class="col-lg">
+              <label for="inputTime" class="form-label">Waktu Jemput</label>
+              <input type="time" class="form-control" placeholder="Pilih Waktu" id="inputTime" required/>
             </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
 
-    <!--FAQ-->
-    <div id="section6">
-      <div class="container my-5 pb-5 pt-5">
-        <div class="row">
-          <div class="col-md-5 my-3">
-            <div id="textFAQ">
-              <h3><b>Frequently Asked Question</b></h3>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="col-lg">
+              <label for="" class="form-label">Jumlah Penumpang</label>
+              <input type="text" class="form-control" placeholder="Jumlah Penumpang" id="inputPenumpang"/>
             </div>
-          </div>
-          <div class="col-md-7 mt-2 mb-5">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Apa saja syarat yang dibutuhkan?
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Berapa hari minimal sewa mobil lepas kunci?
-                  </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Berapa hari sebelumnya sabaiknya booking sewa mobil?
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    Apakah ada biaya antar-jemput?
-                  </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                    Bagaimana jika terjadi kecelakaan?
-                  </button>
-                </h2>
-                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                </div>
-              </div>
+
+            <div class="col-lg">
+              <button type="submit" class="btn btn-success" id="btn-cariMobil">Cari Mobil</button>
             </div>
+
           </div>
-        </div>
+        </form>
       </div>
-    </div>
+    </div>    
 
     <!--footer-->
     <div class="container-fluid mt-5 pt-5" style="background-color:#F1F3FF; border-top-left-radius: 40px; border-top-right-radius: 40px;">
