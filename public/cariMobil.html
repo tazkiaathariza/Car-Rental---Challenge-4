@@ -64,7 +64,6 @@
                       <div class="col-md-6" id="texthome">
                           <h1 class="justify-content-center"><b>Sewa & Rental Mobil Terbaik di kawasan Surabaya</b></h1>
                           <p class="justify-content-center">Selamat datang di Binar Car Rental.<br>Kami Menyediakan mobil kualitas terbaik dengan harga terjangkau.<br>Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-                          <button type="button" class="btn btn-success">Mulai Sewa Mobil</button>
                       </div>
                       <div class="col-md-6 mt-lg-5">
                           <img src="Image/Car.svg" id="ImgCar" class="img-fluid">
@@ -73,10 +72,47 @@
               </div>
     </div>
 
-    
+    <!--Cari Mobil-->
+    <div class="container position-relative cariMobil">
+      <div class="formCariMobil">
+        <form>
+          <div class="row">
+
+            <div class="col-lg">
+              <label for="inputDriver" class="form-label">Tipe Driver</label>
+              <select class="form-select" placeholder="Pilih Tipe Driver" id="inputDriver" required>
+                <option selected>Pilih Tipe Driver</option>
+                <option>Dengan Sopir</option>
+                <option>Tanpa Sopir (Lepas Kunci)</option>
+              </select>
+            </div>
+
+            <div class="col-lg">
+              <label for="inputDate" class="form-label">Tanggal</label>
+              <input type="date" class="form-control" placeholder="Pilih Tanggal" id="inputDate" required/>
+            </div>
+
+            <div class="col-lg">
+              <label for="inputTime" class="form-label">Waktu Jemput</label>
+              <input type="time" class="form-control" placeholder="Pilih Waktu" id="inputTime" required/>
+            </div>
+
+            <div class="col-lg">
+              <label for="" class="form-label">Jumlah Penumpang</label>
+              <input type="text" class="form-control" placeholder="Jumlah Penumpang" id="inputPenumpang"/>
+            </div>
+
+            <div class="col-lg">
+              <button type="submit" class="btn btn-success" id="btn-cariMobil">Cari Mobil</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>    
 
     <!--footer-->
-    <div class="container-fluid mt-5 pt-5" style="background-color:#ffffff; border-top-left-radius: 40px; border-top-right-radius: 40px;">
+    <div class="container-fluid mt-5 pt-5" style="background-color:#F1F3FF; border-top-left-radius: 40px; border-top-right-radius: 40px;">
       <footer>
         <div class="container p-4">
           <div class="row">
