@@ -66,6 +66,10 @@
     margin-top: 32px;
 }
 
+/* select.decorated option:hover {
+    background-color: #C9E7CA inset;
+    color: #5CB85F;
+} */
 
 /* Footer */
 footer {

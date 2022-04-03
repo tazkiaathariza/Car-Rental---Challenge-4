@@ -81,9 +81,9 @@
             <div class="col-lg">
               <label for="inputDriver" class="form-label">Tipe Driver</label>
               <select class="form-select" placeholder="Pilih Tipe Driver" id="inputDriver" required>
-                <option selected>Pilih Tipe Driver</option>
-                <option>Dengan Sopir</option>
-                <option>Tanpa Sopir (Lepas Kunci)</option>
+                <option class="opsi" selected>Pilih Tipe Driver</option>
+                <option class="opsi">Dengan Sopir</option>
+                <option class="opsi">Tanpa Sopir (Lepas Kunci)</option>
               </select>
             </div>
 
@@ -94,7 +94,14 @@
 
             <div class="col-lg">
               <label for="inputTime" class="form-label">Waktu Jemput</label>
-              <input type="time" class="form-control" placeholder="Pilih Waktu" id="inputTime" required/>
+              <select class="form-select" placeholder="Pilih Waktu"  id="inputTime" required>
+                <option class="opsi" selected>Pilih Waktu</option>
+                <option class="opsi">08.00       WIB</option>
+                <option class="opsi">09.00       WIB</option>
+                <option class="opsi">10.00       WIB</option>
+                <option class="opsi">11.00       WIB</option>
+                <option class="opsi">12.00       WIB</option>
+              </select>
             </div>
 
             <div class="col-lg">
@@ -113,9 +120,14 @@
 
     <!--Daftar Mobil-->
     <div class="container">
+
       <button id="load-btn">Load</button>
       <button id="clear-btn">Clear</button>
-      <div id="cars-container"></div>
+
+      <div id="cars-container">
+
+      </div>
+
     </div>
 
     <!--footer-->
