@@ -73,6 +73,8 @@
 
 /* Display Cars */
 
+
+
 .card {
   background: white;
   border-radius: 8px;
@@ -83,8 +85,8 @@
 }
 
 .imageCars {
-  width: 100%;
-  height: 35%;
+  width: 16rem;
+  height: 15rem;
 }
 
 .txt-Tipe {
@@ -111,7 +113,6 @@
 
 #btn-pilihMobil {
     width: 100%;
-    margin-top: 24px;
     
 }
 
