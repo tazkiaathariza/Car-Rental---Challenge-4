@@ -81,9 +81,9 @@
             <div class="col-lg">
               <label for="inputDriver" class="form-label">Tipe Driver</label>
               <select class="form-select" placeholder="Pilih Tipe Driver" id="inputDriver" required>
-                <option selected>Pilih Tipe Driver</option>
-                <option>Dengan Sopir</option>
-                <option>Tanpa Sopir (Lepas Kunci)</option>
+                <option class="opsi" selected>Pilih Tipe Driver</option>
+                <option class="opsi">Dengan Sopir</option>
+                <option class="opsi">Tanpa Sopir (Lepas Kunci)</option>
               </select>
             </div>
 
@@ -94,7 +94,14 @@
 
             <div class="col-lg">
               <label for="inputTime" class="form-label">Waktu Jemput</label>
-              <input type="time" class="form-control" placeholder="Pilih Waktu" id="inputTime" required/>
+              <select class="form-select" placeholder="Pilih Waktu"  id="inputTime" required>
+                <option class="opsi" selected>Pilih Waktu</option>
+                <option class="opsi">08.00       WIB</option>
+                <option class="opsi">09.00       WIB</option>
+                <option class="opsi">10.00       WIB</option>
+                <option class="opsi">11.00       WIB</option>
+                <option class="opsi">12.00       WIB</option>
+              </select>
             </div>
 
             <div class="col-lg">
@@ -112,10 +119,29 @@
     </div>
 
     <!--Daftar Mobil-->
-    <div class="container">
+    <div class="container my-lg-3">
+
       <button id="load-btn">Load</button>
       <button id="clear-btn">Clear</button>
-      <div id="cars-container"></div>
+
+      <div id="cars-container" class="row row-cols-1 row-cols-xs-1 row-cols-sm-1 row-cols-lg-3 g-3 mb-5 mt-3">
+      
+      <!-- CONTOH CARD >> car.example.js
+       <div class="card col-lg-4">
+          <div class="card-body">
+            <img src="images/car01.min.jpg" class="imageCars"/>
+            <div class="txt-Tipe">Nama/Tipe Mobil</div>
+            <div class="txt-Harga">Rp 430.000 / hari</div>
+            <div class="txt-Caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+            <div class="txt-Caption"><img src="Image/icon_users.svg">    4 orang</div>
+            <div class="txt-Caption"><img src="Image/icon_settings.svg">    Manual</div>
+            <div class="txt-Caption"><img src="Image/icon_calendar.svg">    Tahun 2020</div>
+            <button type="submit" class="btn btn-success" id="btn-pilihMobil">Pilih Mobil</button>
+          </div>
+        </div>
+      -->
+
+      </div>
     </div>
 
     <!--footer-->
