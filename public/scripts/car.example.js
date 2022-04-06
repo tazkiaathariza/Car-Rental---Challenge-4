@@ -48,9 +48,9 @@ render() {
       <div class="txt-Tipe">${this.manufacture}</div>
       <div class="txt-Harga">Rp ${this.rentPerDay}</div>
       <div class="txt-Caption">${this.description}</div>
-      <div class="txt-Captionlist"><img src="Image/icon_users.svg">${this.capacity}</div>
-      <div class="txt-Captionlist"><img src="Image/icon_settings.svg">${this.transmission}</div>
-      <div class="txt-Captionlist"><img src="Image/icon_calendar.svg">${this.year}</div>
+      <div class="txt-Captionlist"><img src="Image/icon_users.png">${this.capacity}</div>
+      <div class="txt-Captionlist"><img src="Image/icon_settings.png">${this.transmission}</div>
+      <div class="txt-Captionlist"><img src="Image/icon_calendar.png">${this.year}</div>
     </div>
     <button type="submit" class="btn btn-success" id="btn-pilihMobil">Pilih Mobil</button>
   </div>
