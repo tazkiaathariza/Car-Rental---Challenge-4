@@ -22,7 +22,9 @@ class App {
   };
 
   async load() {
-    const cars = await Binar.listCars();
+    const cars = await Binar.listCars((item) => {
+      return item.capacity == 4 && item.available == true;
+    });
     Car.init(cars);
   }
 
