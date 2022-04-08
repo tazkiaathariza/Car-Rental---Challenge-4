@@ -13,5 +13,13 @@ console.log(params);
  * Contoh penggunaan DOM di dalam class
  * */
 const app = new App();
-
-app.init().then(app.run);
+app.loadButton.onclick = app.loadFilter(app.penumpang.value);
+console.log(app.loadButton);
+console.log(app.penumpang.value);
+const btn_load = app.loadButton;
+btn_load.addEventListener ('click', function(e) {
+    e.preventDefault();
+    console.log(app.penumpang);
+    app.loadFilter(app.penumpang).then(app.run);
+})
+// app.init().then(app.run);

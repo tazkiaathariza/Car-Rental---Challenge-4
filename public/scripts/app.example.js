@@ -3,6 +3,7 @@ class App {
     this.clearButton = document.getElementById("clear-btn");
     this.loadButton = document.getElementById("load-btn");
     this.carContainerElement = document.getElementById("cars-container");
+    this.penumpang = document.getElementById("penumpang").value;
   }
 
   async init() {
@@ -21,12 +22,20 @@ class App {
     });
   };
 
-  async load() {
+  async loadFilter(penumpang) {
+    console.log('penumpang', penumpang);
     const cars = await Binar.listCars((item) => {
-      return item.capacity == 4 && item.available == true;
+     return item.capacity >= Number(penumpang);
     });
     Car.init(cars);
   }
+
+  async load() {
+    const cars = await Binar.listCars((item) => {
+     return item.available === true;
+    });
+    Car.init(cars);
+  } 
 
   clear = () => {
     let child = this.carContainerElement.firstElementChild;
