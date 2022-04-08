@@ -42,15 +42,15 @@ class Car {
 
 render() {
     return `
-    <div class="card col-lg-4 col-md-6 mt-4">
+    <div class="card col-lg-4 col-md-6 mt-2">
     <div class="card-body">
       <img src="${this.image}" class="imageCars"/>
-      <div class="txt-Tipe">${this.manufacture}</div>
-      <div class="txt-Harga">Rp ${this.rentPerDay}</div>
+      <div class="txt-Tipe">${this.manufacture} ${this.model}</div>
+      <div class="txt-Harga">Rp ${this.rentPerDay} / hari</div>
       <div class="txt-Caption">${this.description}</div>
-      <div class="txt-Captionlist"><img src="Image/icon_users.png">${this.capacity}</div>
-      <div class="txt-Captionlist"><img src="Image/icon_settings.png">${this.transmission}</div>
-      <div class="txt-Captionlist"><img src="Image/icon_calendar.png">${this.year}</div>
+      <div class="txt-Captionlist"><img src="Image/icon_users.png">   ${this.capacity} orang</div>
+      <div class="txt-Captionlist"><img src="Image/icon_settings.png">   ${this.transmission}</div>
+      <div class="txt-Captionlist"><img src="Image/icon_calendar.png">   Tahun ${this.year}</div>
     </div>
     <button type="submit" class="btn btn-success" id="btn-pilihMobil">Pilih Mobil</button>
   </div>

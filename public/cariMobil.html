@@ -75,42 +75,42 @@
     <!--Cari Mobil-->
     <div class="container position-relative cariMobil">
       <div class="formCariMobil">
-        <form>
+        <form id="form" action="">
           <div class="row">
 
             <div class="col-lg">
               <label for="inputDriver" class="form-label">Tipe Driver</label>
               <select class="form-select" placeholder="Pilih Tipe Driver" id="inputDriver" required>
                 <option class="opsi" selected>Pilih Tipe Driver</option>
-                <option class="opsi">Dengan Sopir</option>
-                <option class="opsi">Tanpa Sopir (Lepas Kunci)</option>
+                <option class="opsi" value="Dengan Sopir">Dengan Sopir</option>
+                <option class="opsi" value="Tanpa Sopir">Tanpa Sopir (Lepas Kunci)</option>
               </select>
             </div>
 
             <div class="col-lg">
               <label for="inputDate" class="form-label">Tanggal</label>
-              <input type="date" class="form-control" placeholder="Pilih Tanggal" id="inputDate" required/>
+              <input type="date" class="form-control" placeholder="Pilih Tanggal" id="tanggal" value=""/>
             </div>
 
             <div class="col-lg">
               <label for="inputTime" class="form-label">Waktu Jemput</label>
               <select class="form-select" placeholder="Pilih Waktu"  id="inputTime" required>
                 <option class="opsi" selected>Pilih Waktu</option>
-                <option class="opsi">08.00       WIB</option>
-                <option class="opsi">09.00       WIB</option>
-                <option class="opsi">10.00       WIB</option>
-                <option class="opsi">11.00       WIB</option>
-                <option class="opsi">12.00       WIB</option>
+                <option class="opsi"  value="08.00">08.00       WIB</option>
+                <option class="opsi"  value="09.00">09.00       WIB</option>
+                <option class="opsi"  value="10.00">10.00       WIB</option>
+                <option class="opsi"  value="11.00">11.00       WIB</option>
+                <option class="opsi"  value="12.00">12.00       WIB</option>
               </select>
             </div>
 
             <div class="col-lg">
-              <label for="" class="form-label">Jumlah Penumpang</label>
-              <input type="text" class="form-control" placeholder="Jumlah Penumpang" id="inputPenumpang"/>
+              <label for="penumpang" class="form-label">Jumlah Penumpang</label>
+              <input id="jumlahPenumpang" type="text" class="form-control" placeholder="Jumlah Penumpang" value="">
             </div>
 
             <div class="col-lg">
-              <button type="submit" class="btn btn-success" id="btn-cariMobil">Cari Mobil</button>
+              <button class="btn btn-success" id="load-btn">Cari Mobil</button>
             </div>
 
           </div>
@@ -119,10 +119,9 @@
     </div>
 
     <!--Daftar Mobil-->
-    <div class="container my-lg-3">
+    <div class="container my-lg-2">
 
-      <button id="load-btn">Load</button>
-      <button id="clear-btn">Clear</button>
+      <button id="clear-btn" class="btn btn-outline-danger">Hapus Pencarian</button>
 
       <div id="cars-container" class="row row-cols-1 row-cols-xs-1 row-cols-sm-1 row-cols-lg-3 row-cols-md-2 g-3 mb-5 mt-3">
       
