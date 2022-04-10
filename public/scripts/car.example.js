@@ -51,6 +51,7 @@ render() {
       <div class="txt-Captionlist"><img src="Image/icon_users.png">   ${this.capacity} orang</div>
       <div class="txt-Captionlist"><img src="Image/icon_settings.png">   ${this.transmission}</div>
       <div class="txt-Captionlist"><img src="Image/icon_calendar.png">   Tahun ${this.year}</div>
+      <!-- <div>${this.available} ${this.availableAt}</div> -->
     </div>
     <button type="submit" class="btn btn-success" id="btn-pilihMobil">Pilih Mobil</button>
   </div>

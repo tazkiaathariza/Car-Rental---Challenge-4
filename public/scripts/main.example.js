@@ -14,13 +14,13 @@ console.log(params);
  * */
 const app = new App();
 app.loadButton.onclick = app.loadFilter(app.jumlahPenumpang.value);
-console.log(app.loadButton);
-console.log(app.jumlahPenumpang.value);
+// console.log(app.loadButton);
+// console.log(app.jumlahPenumpang.value);
 const btn_load = app.loadButton;
 btn_load.addEventListener ('click', function(e) {
     e.preventDefault();
     console.log(app.jumlahPenumpang.value);
-    app.loadFilter(app.jumlahPenumpang.value).then(app.run);
+   app.loadFilter(app.jumlahPenumpang.value).then(app.run);
 })
 const btn_clear = app.clearButton;
 btn_clear.addEventListener ('click', function(){

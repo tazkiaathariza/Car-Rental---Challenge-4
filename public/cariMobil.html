@@ -89,24 +89,17 @@
 
             <div class="col-lg">
               <label for="inputDate" class="form-label">Tanggal</label>
-              <input type="date" class="form-control" placeholder="Pilih Tanggal" id="tanggal" value=""/>
+              <input type="date" class="form-control" placeholder="Pilih Tanggal" id="inputDate" required>
             </div>
 
             <div class="col-lg">
               <label for="inputTime" class="form-label">Waktu Jemput</label>
-              <select class="form-select" placeholder="Pilih Waktu"  id="inputTime" required>
-                <option class="opsi" selected>Pilih Waktu</option>
-                <option class="opsi"  value="08.00">08.00       WIB</option>
-                <option class="opsi"  value="09.00">09.00       WIB</option>
-                <option class="opsi"  value="10.00">10.00       WIB</option>
-                <option class="opsi"  value="11.00">11.00       WIB</option>
-                <option class="opsi"  value="12.00">12.00       WIB</option>
-              </select>
+              <input type="time" id="inputTime" class="form-control" placeholder="00:00">
             </div>
 
             <div class="col-lg">
               <label for="penumpang" class="form-label">Jumlah Penumpang</label>
-              <input id="jumlahPenumpang" type="text" class="form-control" placeholder="Jumlah Penumpang" value="">
+              <input id="jumlahPenumpang" type="number" class="form-control" placeholder="Jumlah Penumpang" value="">
             </div>
 
             <div class="col-lg">
